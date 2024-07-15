@@ -1,0 +1,329 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff; 
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Courgette', cursive; 
+    font-size: 3em; 
+    font-weight: 250; 
+    color: #000; 
+    margin-left: 20px;
+}
+header a:hover {
+    color: #9b7aa7;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hero {
+    background: url('https://bakersestate.in/wp-content/uploads/2019/06/bakery-wallpapers-1920x1200-for-full-hd.jpg') no-repeat center center/cover; 
+    color: #fff; 
+    padding: 150px 0; 
+    text-align: center;
+    position: relative; 
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+#hero h2, #hero p {
+    position: relative;
+    z-index: 2; 
+}
+
+#hero h2 {
+    font-size: 2.5em; 
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#hero p {
+    font-size: 1.2em; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#hero .btn {
+    display: inline-block;
+    color: #fff;
+    background: #c8a2c8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease; 
+    position: relative;
+    z-index: 2; 
+}
+
+#hero .btn:hover {
+    background: #9b7aa7; /* Darker lilac hover color */
+}
+
+
+
+
+main {
+    background: #fff; /* Main section background */
+    padding: 20px 0;
+}
+
+section {
+    padding: 30px 0; 
+    margin-bottom: 20px;
+}
+
+
+/* About Section Styles */
+
+#about {
+    background: #fff; /* Background color for about section */
+    color: #333; /* Text color in about section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section */
+}
+
+#about h2 {
+    color: #c8a2c8; /* Heading color in about section */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+}
+#about h3 {
+    color: #c8a2c8; 
+    text-align: left;}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.top-sellers {
+    margin-top: 30px;
+}
+
+.top-sellers h3 {
+    font-size: 1.8em;
+    color: #c8a2c8;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the sub-heading */
+}
+
+.recipe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f4f4f4; /* Light gray background for each recipe */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for each recipe */
+}
+
+.recipe img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.recipe-info {
+    max-width: calc(100% - 170px);
+}
+
+.recipe-info h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.signup-form {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 75%;
+    
+}
+
+table {
+    border: 2px solid #c4aead;
+    width: 90%;
+    border-collapse: collapse;
+    height: 100%;
+    
+}
+
+td {
+    padding: 0.5rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #6b4f4f;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background:   #c8a2c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #9b7aa7;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #c4aead;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#menu {
+    background: #f4f4f4; /* Background color for menu section */
+    color: #333; /* Text color in menu section */
+    text-align: center; /* Centered text */
+    height: 900px;
+}
+
+#menu h2 {
+    color: #c8a2c8; /* Heading color in menu section */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#menu .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#menu .gallery img {
+    max-width: 400px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+#menu .gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+#contact {
+    background: #fff; 
+    color: #333; 
+    text-align: center;
+}
+
+#contact h2 {
+    color: #c8a2c8; 
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #c8a2c8; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9b7aa7; 
+}
+.social-links img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.2); 
+  }
